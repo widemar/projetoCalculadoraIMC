@@ -43,4 +43,4 @@ function subEscopo() {
   formulario.addEventListener("submit", calculaIMC);
 
 }
-escopoGlobal();
+subEscopo();
