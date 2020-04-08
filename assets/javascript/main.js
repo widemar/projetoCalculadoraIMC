@@ -1,4 +1,4 @@
-function escopoGlobal() {
+function subEscopo() {
   let formulario = document.querySelector("#formulario");
 
   function calculaIMC(evento) {
@@ -10,11 +10,6 @@ function escopoGlobal() {
     
     let IMC = peso / (altura * altura);
     
-    console.log("Peso: ", peso);
-    console.log("Altura: ", altura);
-   
-   
-
     if (IMC > 0 && IMC < 18.5) {
       document.getElementById("resultado").style.backgroundColor = "#ffd700";
       return resultado.innerHTML = "Abaixo do peso";
@@ -43,8 +38,6 @@ function escopoGlobal() {
       document.getElementById("resultado").style.backgroundColor = "#cc0000";
       return resultado.innerHTML = "Obesidade Grau 3";
     }
-
-
 
   }
   formulario.addEventListener("submit", calculaIMC);
